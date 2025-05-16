@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+         
+            font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff6a00, #000000);
+    color: white;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+button.theme-toggle:hover {
+    background: #ffcc70;
+    color: black;}
+
+.light-mode {
+    background: linear-gradient(135deg, #ffffff, #ffcc70);
+    color: black;
+}
+
+h1, h2 {
+    color: #ff6a00;
+}
+
+button {
+    background: #ff6a00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff9500;
+}
+
+nav ul li a {
+    color: #ffcc70;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 204, 112, 0.3);
+    color: black;
+}
+
+        }
+        .light-mode {
+            background: linear-gradient(135deg, #ffffff, #f3f3f3);
+            color: black;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+        }
+        nav {
+            margin: 20px auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .light-mode nav ul li a {
+            color: black;
+        }
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        section {
+            background: rgba(255, 204, 112, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #ffcc70;
+        }
+
+        #education {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    color: #ff6a00;
+}
+
+h3 {
+    color: rgb(2, 2, 2);
+}
+
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            transition: 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        .project a {
+            color: #ff4b2b;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .project a:hover {
+            color: #ff9f68;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .theme-toggle {
+            margin: 20px;
+            padding: 10px 20px;
+            background: #ff4b2b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .theme-toggle:hover {
+            background: #ff9f68;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VIGNESH R</h1>
+        <p>Web Developer | java developer | Tech Enthusiast</p>
+        <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate web developer with a keen eye for detail and a love for crafting beautiful, user-friendly experiences. With expertise in front-end and back-end technologies, I specialize in building responsive and scalable web applications. Constantly exploring new technologies, I thrive in collaborative environments and enjoy tackling complex challenges. Let's build something amazing together!</p>.</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Computer Science - 84%</h3>
+            <p>St.thomas college of Arts & Science | 2020 - 2023</p>
+        </div>
+        <div class="education-item">
+            <h3>Higher Secondary Education</h3>
+            <p>Avichi Higher Secondary School | 2020</p>
+        </div> <div class="education-item">
+            <h3>SSLC</h3>
+            <p>M.R matric Higher Secondary School | 2018</p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>online mobile shopping </h3>
+            <p>This project involves developing a responsive and interactive e-commerce website tailored for mobile devices. The website enables users to browse, search, and purchase mobile phones and accessories seamlessly. Utilizing HTML for structure, CSS for styling, and JavaScript for interactivity, the site offers a user-friendly shopping experience.
+
+            </p>
+            <a href="#">https://vigneshvicky424.neocities.org/</a>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>photoshop</li>
+            <li>canva</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Ph no: 6369400495</p>
+        <p>Email: vickykavitha372@gmail.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="#">github.com/yourusername</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 VIGNESH. All rights reserved.</p>
+    </footer>
+</body>
+</html>
